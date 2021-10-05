@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ffdab9;
+    margin: 0;
+    padding: 0;
+}
+
+/* jumbotron */
+.jumbotron {
+    font-size: 30px;
+    background-color: #002366;
+    padding-top: 120px;
+    padding-bottom: -50px;
+    height: 500px;
+    text-align: center;
+    color:  #ffdab9;
+	position: relative;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.jumbotron h1 {
+    color: #fa8072;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+}
+
+.jumbotron p {
+    text-align: center;
+}
+
+.jumbotron::after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 80%;
+	background-image: linear-gradient(to top, rgb(212, 78, 37), rgba(255, 255, 255, 0));
+	position: absolute;
+	bottom: 0;
+}
+/* navigasi */
+nav {
+    background-color: #002366;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav ul {
+    text-align: right;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fa8072;
+}
+
+nav a:hover {
+    color: #ffdab9;
+    font-weight: bold;
+}
+
+header {
+    display: inline;
+}
+
+/* content/articles */
+#content {
+    float: left;
+    width: 70%;
+}
+
+main {
+    padding: 10px;
+    overflow: auto;
+}
+
+h2 {
+    color: #002366;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+/* menu campus */
+#campus {
+    overflow: auto;
+}
+
+#campus figure {
+    float: left;
+    padding: 20px;
+    margin: 50px;
+    width: 100px;
+}
+
+figcaption {
+    text-align: center;
+    color: #002366;
+    padding: 0 auto;
+    font-weight: bold;
+    position: absolute;
+}
+
+.sub-menu {
+    box-shadow: 0 4px 5px 0;
+    border-radius: 6px;
+    padding: 25px;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.campus-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    padding: 0;
+}
+
+/* menu articles */
+.article-img {
+    width: 40%;
+    border-radius: 10px;
+    float: left;
+    margin: 10px;
+}
+
+#articles h2{
+    text-align: left;
+}
+
+#articles p {
+    text-indent: 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: #fa8072;
+    background-color: #002366;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.clear {
+    clear: left;
+}
+
+/* about */
+#about p {
+    text-indent: 30px;
+}
+
+/* testimoni */
+.slide-row {
+    display: flex;
+    width: 2500px;
+    transition: 0.5s;
+}
+
+.slide-col {
+    width: 560px;
+    height: 200px;
+    position: relative;
+}
+
+.user-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.user-img img {
+    height: 200px;
+    border-radius: 10px;
+}
+
+.user-text {
+    background-color: #002366;
+    width: 400px;
+    height: 170px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: white;
+    text-align: justify;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.user-text p {
+    line-height: 20px;
+}
+
+.container-testi {
+    position: sticky;
+    top: 7%;
+    right: 16%;
+    transform: translate(16%, -7%);
+}
+
+.indicator {
+    position: absolute;
+    left: 37%;
+    transform: translateX(-37%);
+    bottom: -30px;
+}
+
+.tombol {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 4px;
+    border-radius: 15px;
+    background-color: #002366;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.active {
+    width: 25px;
+}
+
+.testimoni {
+    width: 63.6%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* profile */
+aside {
+    float: right;
+    width: 30%;
+    padding: 30px;
+    position: relative;
+    margin-right: -360px;
+    margin-top: -1269px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.profile img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    border: 2px solid #002366;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+th, td {
+    text-align: left;
+    color: #002366;
+}
+
+/* footer */
+
+footer {
+    padding: 7px;
+    color: #fa8072;
+    background-color: #002366;
+    font-weight: 590;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #campus figure {
+        width: 80px;
+        margin: 35px;
+    }
+
+    .img-campus {
+        padding-left: 40px;
+    }
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    aside {
+        margin: 20px auto;
+        box-shadow: 0 4px 5px 0;
+    }
+
+    .profile img {
+        margin-left: 125px;
+    }
+    
+    table {
+        margin: 20px auto ;
+        margin-bottom: 20px;
+        padding-left: 50px;
+    }
+    
+    .indicator {
+        left: 30%;
+        transform: translateX(-30%);
+    }
+}
